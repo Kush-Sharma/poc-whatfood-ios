@@ -62,8 +62,9 @@ struct WhatFoodContentView: View {
                     if let imageClass = classifier.imageClass {
                         HStack{
                             Text("Image categories:")
-                                .font(.title)
+                                .font(.caption)
                             Text(imageClass)
+                                .font(.caption)
                                 .bold()
                         }
                     } else {
